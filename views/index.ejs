@@ -1,0 +1,81 @@
+<%- include partials/header.ejs %> <%- include partials/main_nav.ejs %>
+
+<!--Title-->
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Welcome to <%= title %> page</h1>
+  </div>
+</div>
+
+<!-- <div class="container-lg d-flex justify-content-center">
+    <h1 class="display-8 fw-bold">Mission Statement</h1>
+    <hr>
+    <p class="text-center text-break badge bg-dark text-wrap">Center aligned text on all viewport sizes.</p>
+  </div> -->
+<% if ( title == "Home") {%>
+<div class="contanier-lg d-flex justify-content-center">
+  <div class="card" style="width: 50rem">
+    <div class="card-body">
+      <h5 class="card-title">Mission Statement</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+    </div>
+  </div>
+</div>
+<% } else if ( title == "About Me") {%>
+<div class="contanier-lg d-flex justify-content-center">
+  <div class="card" style="width: 50rem">
+    <img src="Assests/images/photo.jpg" class="card-img-top rounded mx-auto d-block img-thumbnail" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Who am I?</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Hassaan binKhalil</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Resume</a>
+    </div>
+  </div>
+</div>
+<% } else if ( title == "Projects") {%> 
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<% } else if ( title == "Services") {%>
+<% } else if ( title == "Contact Me"){%> <% } %> <%- include
+partials/bottom_nav.ejs %> <%- include partials/footer.ejs %>
