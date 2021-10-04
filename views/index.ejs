@@ -7,11 +7,7 @@
   </div>
 </div>
 
-<!-- <div class="container-lg d-flex justify-content-center">
-    <h1 class="display-8 fw-bold">Mission Statement</h1>
-    <hr>
-    <p class="text-center text-break badge bg-dark text-wrap">Center aligned text on all viewport sizes.</p>
-  </div> -->
+<!--Home page content-->
 <% if ( title == "Home") {%>
 <div class="contanier-lg d-flex justify-content-center">
   <div class="card" style="width: 50rem">
@@ -23,6 +19,7 @@
     </div>
   </div>
 </div>
+<!--About Me page content-->
 <% } else if ( title == "About Me") {%>
 <div class="contanier-lg d-flex justify-content-center">
   <div class="card" style="width: 50rem">
@@ -41,6 +38,7 @@
     </div>
   </div>
 </div>
+<!--Projects page content-->
 <% } else if ( title == "Projects") {%> 
   <div class="row">
     <div class="col-sm-4">
@@ -74,6 +72,7 @@
       </div>
     </div>
   </div>
+<!--Services page content-->
 <% } else if ( title == "Services") {%>
   <div class="contanier-lg d-flex justify-content-center">
     <div class="card" style="width: 50rem;">
@@ -87,6 +86,7 @@
       </ul>
     </div>
   </div>
+<!--Contact Me page content-->
 <% } else if ( title == "Contact Me"){%> 
   <div class="contanier-lg d-flex justify-content-center">
     <div class="row g-3">
